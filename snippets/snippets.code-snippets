@@ -1,0 +1,28 @@
+{
+  "class template": {
+    "prefix": "class:",
+    "body": [
+      "const ${1:ClassName} = (function () {",
+      "\t// Private modifier",
+      "\tconst _ = new Proxy({}, {",
+      "\t\tget: (obj, name) => {",
+      "\t\t\tif (obj[name] === undefined) {",
+      "\t\t\t\tobj[name] = Symbol(name)",
+      "\t\t\t}",
+      "\t\t\treturn obj[name]",
+      "\t\t},",
+      "\t\tset: () => { }",
+      "\t})",
+      "",
+      "\t// constructor",
+      "\tfunction ${1:ClassName}($2) {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "\treturn ${1:ClassName}",
+      "})()",
+      ""
+    ],
+    "description": "class template"
+  }
+}

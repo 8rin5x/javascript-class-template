@@ -1,0 +1,38 @@
+{
+  "name": "javascript-class-template",
+  "displayName": "JavaScript Class Template",
+  "description": "Class template for making a private declaration in JavaScript",
+  "version": "1.0.0",
+  "publisher": "8rin5x",
+  "author": {
+    "name": "8rin5x"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/8rin5x/javascript-class-template"
+  },
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "JavaScript",
+    "JS",
+    "ES6",
+    "class",
+    "private",
+    "prototype",
+    "template"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
